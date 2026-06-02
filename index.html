@@ -6,5 +6,45 @@
 <body>
     <h1 style="color: pink;">hi patootie</h1>
     <h2 style="color: red;">What's up.</h2>
+
+    <!-- Line breaks to push the button down -->
+    <br><br><br>
+
+    <!-- The Yellow Button with an onclick function -->
+    <button type="button" onclick="showFlowers()" style="background-color: yellow; color: black; padding: 10px 20px; border: 1px solid #ccc; cursor: pointer;">
+        click me
+    </button>
+
+    <br><br>
+
+    <!-- The Custom Message (hidden by default) -->
+    <p id="customMessage" style="display: none; font-size: 24px; color: #ff6b81; font-weight: bold; font-family: sans-serif; margin-bottom: 10px;">
+        for banana
+    </p>
+
+    <!-- Your Selected Flower Image (hidden by default) -->
+    <img id="flowerImage" src="https://unsplash.com" alt="Pink Roses Bouquet" style="display: none; max-width: 100%; height: 500px; object-fit: cover; border-radius: 8px;">
+
+    <br><br>
+
+    <!-- The Close Button (hidden by default) -->
+    <button id="closeButton" type="button" onclick="hideFlowers()" style="display: none; background-color: #ff6b6b; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;">
+        close
+    </button>
+
+    <!-- The JavaScript Logic -->
+    <script>
+    function showFlowers() {
+        document.getElementById("customMessage").style.display = "block"; // Shows the message
+        document.getElementById("flowerImage").style.display = "block";    // Shows the image
+        document.getElementById("closeButton").style.display = "block";   // Shows the close button
+    }
+
+    function hideFlowers() {
+        document.getElementById("customMessage").style.display = "none";  // Hides the message
+        document.getElementById("flowerImage").style.display = "none";     // Hides the image
+        document.getElementById("closeButton").style.display = "none";    // Hides the close button
+    }
+    </script>
 </body>
 </html>
