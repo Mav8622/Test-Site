@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>banana</title>
+    <title>Banana</title>
 </head>
-<body>
-    <h1 style="color: pink;">hi patootie</h1>
-    <h2 style="color: red;">What's up.</h2>
+<body style="text-align: center; font-family: sans-serif; margin: 0; padding: 20px;">
+
+    <!-- Properly Center-Aligned & Capitalized Headers -->
+    <h1 style="color: pink;">Hi Patootie</h1>
+    <h2 style="color: red;">What's Up.</h2>
 
     <!-- Line breaks to push the button down -->
     <br><br><br>
 
-    <!-- The Yellow Button with an onclick function -->
-    <button type="button" onclick="showFlowers()" style="background-color: yellow; color: black; padding: 10px 20px; border: 1px solid #ccc; cursor: pointer;">
-        click me
+    <!-- Capitalized Yellow Button with an onclick function -->
+    <button type="button" onclick="showFlowers()" style="background-color: yellow; color: black; padding: 10px 20px; border: 1px solid #ccc; cursor: pointer; font-weight: bold;">
+        CLICK ME
     </button>
 
     <br><br>
 
-    <!-- The Custom Message (hidden by default) -->
-    <p id="customMessage" style="display: none; font-size: 24px; color: #ff6b81; font-weight: bold; font-family: sans-serif; margin-bottom: 10px;">
-        for banana
+    <!-- Capitalized Custom Message (hidden by default) -->
+    <p id="customMessage" style="display: none; font-size: 24px; color: #ff6b81; font-weight: bold; margin-bottom: 10px;">
+        FOR BANANA
     </p>
 
-    <!-- Your Selected Flower Image (hidden by default) -->
-    <img id="flowerImage" src="https://unsplash.com" alt="Pink Roses Bouquet" style="display: none; max-width: 100%; height: 500px; object-fit: cover; border-radius: 8px;">
+    <!-- Guaranteed Open Source Image Container (hidden by default) -->
+    <div style="display: flex; justify-content: center;">
+        <img id="flowerImage" src="https://wikimedia.org" alt="Pink Roses Bouquet" style="display: none; max-width: 90%; max-height: 500px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    </div>
 
     <br><br>
 
-    <!-- The Close Button (hidden by default) -->
-    <button id="closeButton" type="button" onclick="hideFlowers()" style="display: none; background-color: #ff6b6b; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;">
-        close
+    <!-- Capitalized Close Button (hidden by default) -->
+    <button id="closeButton" type="button" onclick="hideFlowers()" style="display: none; background-color: #ff6b6b; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin: 0 auto;">
+        CLOSE
     </button>
 
     <!-- The JavaScript Logic -->
