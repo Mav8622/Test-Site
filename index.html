@@ -12,7 +12,7 @@
     <!-- Line breaks to push the button down -->
     <br><br><br>
 
-    <!-- Capitalized Yellow Button with an onclick function -->
+    <!-- Capitalized Open button with an onclick function -->
 <button id="closeButton" type="button" onclick="hideFlowers()" style="display: none; background-color: #ff6b6b; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin: 0 auto;">
         CLICK ME
     </button>
@@ -20,7 +20,7 @@
     <br><br>
 
     <!-- Capitalized Custom Message (hidden by default) -->
-    <p id="customMessage" style="display: none; font-size: 24px; color: #F041BD; font-weight: bold; margin-bottom: 10px;">
+    <p id="customMessage" style="display: none; font-size: 24px; color: #F041BD; font-weight: bold; font-style: italic;" margin-bottom: 10px;">
         FOR BANANA
     </p>
 
@@ -51,5 +51,33 @@
         document.getElementById("closeButton").style.display = "none";    // Hides the close button
     }
     </script>
+
+     <button id="musicTriggerBtn" onclick="toggleMusicView(true)" style="background-color: #FFDE4D; color: #1a1a1a; font-size: 16px; font-weight: bold; font-family: sans-serif; padding: 12px 24px; border: 1px solid #c7ae3c; border-radius: 4px; cursor: pointer;">
+        Today's song
+    </button>
+
+    <div id="playlistRevealBox" style="display: none; flex-direction: column; align-items: center; padding: 15px; border: 1px solid #ccc; border-radius: 4px; width: max-content; margin-top: 10px;">
+        <a href="https://tinyurl.com/3e632h59" target="_blank" rel="noopener noreferrer" style="color: #A32222; font-family: sans-serif; font-weight: bold; text-decoration: underline wavy #FFDE4D; margin-bottom: 15px; display: block;">
+            
+        </a>
+        <button onclick="toggleMusicView(false)" style="background-color: #e5e5e5; color: #444444; font-family: sans-serif; padding: 6px 16px; border: 1px solid #bbb; border-radius: 4px; cursor: pointer;">
+            close
+        </button>
+    </div>
+
+    <script>
+        function toggleMusicView(showPlaylist) {
+            var mainBtn = document.getElementById('musicTriggerBtn');
+            var revealBox = document.getElementById('playlistRevealBox');
+            if (showPlaylist) {
+                mainBtn.style.display = 'none';
+                revealBox.style.display = 'flex';
+            } else {
+                revealBox.style.display = 'none';
+                mainBtn.style.display = 'inline-block';
+            }
+        }
+    </script>
+    
 </body>
 </html>
